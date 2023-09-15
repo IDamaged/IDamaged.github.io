@@ -1,0 +1,89 @@
+html{
+    height: 100%;
+    background-color: rgb(161, 161, 161);
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    padding: 50%;
+  }
+
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+  }
+  .Navegacion{
+    display: flex;
+    justify-content: flex-end;/*pone el contenido al final de la barra*/
+    text-align: right;
+    text-decoration: none;
+    margin: 15px;
+    background-color: black;
+    padding: 20px;
+  }
+  .Navegacion a{
+    
+    text-decoration: none;
+    margin-left: 15px;
+    color: white;
+    border-right: 1px solid black;
+    padding-right: 5px;
+  }
+  .Navegacion a:hover{
+    color:blue;
+  }
+  a, p, h1, h3, h2, h4, th, td, tfoot{
+    font-family: 'Times New Roman', Times, serif;
+  }
+  h1, h3, h2, h4{
+    color: white;
+  }
+  p ,h3, h4{
+    margin: 15px;
+  }
+  #table th,td {
+    border-radius: 10px;
+    border: 2px solid black;
+
+  }
+  #table th{
+    background-color: grey;
+  }
+  #table td{
+    background-color: rgb(150, 208, 223);
+  }
+  #table {
+    background-color: white;
+
+  }
+  div{
+    margin: 25px;
+  }
+  #foot{
+    background-color: black;
+    padding: 20px;
+  }
+  #foot p{
+    color: white;
+    text-align: center;
+  }
+  #informacionPersonal img{
+    width: 150;
+    height: 150;
+    
+  }
+  #table caption{
+    background-color: white;
+  }
+  #table h3{
+    color: black;
+  }
+#contenedor1{
+    background-color:rgb(95, 93, 93);
+
+ }
