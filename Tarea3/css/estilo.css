@@ -1,0 +1,122 @@
+html{
+    height: 100%;
+    
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-image: url('https://c8.alamy.com/compes/2g1hhet/diseno-sin-costuras-con-utensilios-de-cocina-dibujados-a-mano-para-papel-tapiz-rellenos-de-patron-textil-fondo-de-pagina-web-texturas-de-superficie-vecto-colorido-2g1hhet.jpg');
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed; /* Fija la imagen de fondo en su lugar */
+}
+
+
+#navegador{
+    background-color: azure;
+    display: flex;
+    justify-content: end;
+}
+.container-fluid{
+    background-color: azure;
+    text-decoration: none;
+}
+.container-fluid a{
+    text-decoration: none;
+    color: black;
+}
+.container-fluid a:hover{
+    color: blue;
+}
+#foot{
+    background-color: azure;
+    padding: 25px;
+}
+#foot p{
+    color: black;
+    text-align: center;
+}
+
+
+#eslogan h3, p{
+    color: black;
+    
+}
+#eslogan{
+    display: list-item;
+    justify-content: center;
+    margin: 50px;
+    
+}
+#miEslogan{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.473);
+    margin: 25px;
+}
+#frase{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.473);
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    padding: 50%;
+    
+  }
+
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+    color: black;
+  }
+  #tabla{
+    background-color: rgba(255, 255, 255, 0.473);
+    margin: 15px;
+  }
+  #nombre h3{
+    text-align: center;
+    color: black;
+  }
+  #nombre{
+    background-color: rgba(255, 255, 255, 0.473);
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+  }
+  #enlaces a{
+    text-decoration: none;
+    color: black;
+    
+  }
+  #enlaces a:hover{
+    color: blue;
+  }
+
+  @media(max-width:768px) {
+    #navegador{
+        display: flex;
+        justify-content: center;
+    }
+    #contenedor{
+        flex-direction: column;
+        margin: 0px;
+    }
+    #contenedorTabla{
+        flex-direction: column;
+        
+    }
+    #tabla{
+        overflow-x: auto;
+        display: block;
+    }
+    table td, th{
+        padding: 5px;
+    }
+
+  }
+  

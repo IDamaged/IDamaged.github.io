@@ -1,0 +1,171 @@
+html {
+    height: 100%;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url('https://c8.alamy.com/compes/2g1hhet/diseno-sin-costuras-con-utensilios-de-cocina-dibujados-a-mano-para-papel-tapiz-rellenos-de-patron-textil-fondo-de-pagina-web-texturas-de-superficie-vecto-colorido-2g1hhet.jpg');
+    background-size: cover;
+    /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+    background-repeat: no-repeat;
+    /* Evita que la imagen se repita */
+    background-attachment: fixed;
+    /* Fija la imagen de fondo en su lugar */
+}
+
+
+#navegador {
+    background-color: azure;
+    display: flex;
+    justify-content: end;
+}
+
+.container-fluid {
+    background-color: azure;
+    text-decoration: none;
+}
+
+.container-fluid a {
+    text-decoration: none;
+    color: black;
+}
+
+.container-fluid a:hover {
+    color: blue;
+}
+
+#foot {
+    background-color: azure;
+    padding: 25px;
+}
+
+#foot p {
+    color: black;
+    text-align: center;
+}
+
+#contenedor {
+    display: list-item;
+    flex: 1;
+}
+
+#bienvenida {
+    background-color: rgba(255, 255, 255, 0.473);
+    display: flex;
+    flex: 1;
+    margin: 15px;
+    justify-content: center;
+}
+
+#carouselExampleIndicators {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    margin: 15px;
+}
+
+#carouselExampleIndicators img {
+    width: 100%;
+    height: 750px;
+}
+
+#carouselExampleIndicators iframe {
+    width: 100%;
+    height: 650px;
+}
+
+#contenedorInfo{
+    display: block;
+    margin: 10px;
+}
+#infoGeneral{
+    background-color: rgba(255, 255, 255, 0.473);
+    display: block;
+}
+#culturaCulinaria{
+    background-color: rgba(255, 255, 255, 0.473);
+    display: block;
+}
+#ingredientesDestacados{
+    background-color: rgba(255, 255, 255, 0.473);
+    display: block;
+}
+
+#pdfRecetas a{
+    text-decoration: none;
+    color: black;
+}
+#pdfRecetas a:hover{
+    color: blue;
+}
+#pdfRecetas{
+    display: block;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.473);
+}
+#restaurantesRecom{
+    background-color: rgba(255, 255, 255, 0.473);
+    display: block;
+    margin: 10px;
+}
+#restaurantesRecom a{
+    text-decoration: none;
+    color: black;
+}
+#restaurantesRecom a:hover{
+    color: blue;
+}
+#botonHome button{
+    color: black;
+}
+#botonHome{
+    display: flex;
+    justify-content: center;
+}
+@media(max-width:768px) {
+    #navegador {
+        display: flex;
+        justify-content: center;
+    }
+    #contenedor{
+        flex-direction: column;
+    }
+    #bienvenida{
+        display: flex;
+        justify-content: center;
+        margin: 25px;
+        padding: 25px;
+    }
+    #carouselExampleIndicators img {
+        width: 100%;
+        height: 450px;
+    }
+    #carouselExampleIndicators iframe {
+        width: 100%;
+        height: 450px;
+    }
+    #infoGeneral{
+        flex-direction: column;
+        margin: 10px;
+    }
+    #culturaCulinaria{
+        flex-direction: column;
+    }
+    #ingredientesDestacados{
+        flex-direction: column;
+    }
+    #contenedorInfo{
+        margin: 10px;
+        flex-direction: column;
+    }
+
+    #pdfRecetas{
+        flex-direction: column;
+        margin: 10px;
+    }
+}
