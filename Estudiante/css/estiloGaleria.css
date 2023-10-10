@@ -1,0 +1,187 @@
+@font-face {
+    font-family: Yanone Kaffeesatz;
+    src: url('../fonts/YanoneKaffeesatz-Regular.eot');
+    src: local("Yanone Kaffeesatz"), url('../fonts/YanoneKaffeesatz-Regular.ttf');
+  }
+  
+  html {
+    height: 100%;
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  
+  article,
+  aside,
+  figure,
+  footer,
+  header,
+  hgroup,
+  nav,
+  section {
+    display: block;
+  }
+  
+  body {
+    font: normal .8em arial, sans-serif;
+    background: #C4E9E8 url(../images/back.png) repeat-x;
+    color: #555;
+  }
+  
+  #container {
+    background: transparent url(../images/grass.png) repeat-x bottom;
+    position: relative;
+    height: 100vh;
+  
+  }
+  
+  .rounded-box {
+    border-radius: 10px;
+    border: 1px solid #f8f6f6;
+    padding: 20px;
+    background-color: #f6f8f8;
+    position: center;
+  }
+  
+  #main {
+    /*Hace el cuadro blanco con bordes redondeados*/
+    width: 80%;
+    height: 200%;
+    background-color: white;
+    margin: 0px auto 0px auto;
+    padding: 5px;
+    border-style: solid;
+    border-color: lightblue;
+    border-radius: 20px;
+  }
+  
+  .cont_nav {
+    overflow: hidden;
+    background-color: #53C7FD;
+    font-family: Arial;
+  }
+  
+  .cont_nav a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .cont_nav a:hover,
+  #navegacion {
+    /*evento para cuando el mouse pasa sobre la opcion*/
+    background-color: white;
+    color: #E5017D;
+    font: bold;
+    font-size: 20pX;
+  }
+  
+  /* Estilo del menú desplegable */
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #53C7FD;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .dropdown-menu li {
+    margin: 5px 0;
+  }
+  
+  /* Cambia el cursor al pasar el mouse sobre "Adoptar" para indicar que es interactivo */
+  .dropdown:hover {
+    cursor: pointer;
+  }
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+  }
+  footer{
+    background-color: #1ca8e9;
+    padding: 25px;
+    text-align: center;
+  }
+  #navegador{
+    display: flex;
+    justify-content: center;
+  }
+  #navegador a:hover{
+    color: #E5017D;
+  }
+  caption {
+    width: 100%;
+    padding: 1.5%;
+    margin-bottom: 1%;
+    text-align: center;
+    font-size: 2em;
+    background-color: #53C7FD;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+table {
+    margin: 0 50px;
+    overflow: scroll;
+}
+
+thead{
+    width: 100%;
+    text-align: left;
+    background-color: #E5017D;
+    color: #ffffff;
+}
+
+tr {
+    text-align: left;
+    width: 100%;
+}
+
+th {
+    padding: 20px 20px;
+    text-align: left;
+}
+
+
+tfoot {
+    width: 100%;
+    padding: 20px 20px;
+    text-align: left;
+    background-color: #E5017D;
+    margin: 2px;
+}
+
+td {
+    padding: 10px 20px;
+    text-align: center;
+}
+
+table {
+    width: 90%;
+    height: 60%;
+}
+
+
+tr:nth-child(even) {
+    background-color: #C4E9E8;
+}

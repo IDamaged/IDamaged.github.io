@@ -1,0 +1,247 @@
+@font-face {
+  font-family: Yanone Kaffeesatz;
+  src: url('../fonts/YanoneKaffeesatz-Regular.eot');
+  src: local("Yanone Kaffeesatz"), url('../fonts/YanoneKaffeesatz-Regular.ttf');
+}
+
+html {
+  height: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+
+body {
+  font: normal .8em arial, sans-serif;
+  background: #C4E9E8 url(../images/back.png) repeat-x;
+  color: #555;
+}
+
+#container {
+  background: transparent url(../images/grass.png) repeat-x bottom;
+  position: relative;
+  height: 100vh;
+
+}
+
+.rounded-box {
+  border-radius: 10px;
+  border: 1px solid #f8f6f6;
+  padding: 20px;
+  background-color: #f6f8f8;
+  position: center;
+}
+
+#main {
+  /*Hace el cuadro blanco con bordes redondeados*/
+  width: 80%;
+  height: 120%;
+  background-color: white;
+  margin: 0px auto 0px auto;
+  padding: 5px;
+  border-style: solid;
+  border-color: lightblue;
+  border-radius: 20px;
+}
+
+.cont_nav {
+  overflow: hidden;
+  background-color: #53C7FD;
+  font-family: Arial;
+}
+
+.cont_nav a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.cont_nav a:hover,
+#navegacion {
+  /*evento para cuando el mouse pasa sobre la opcion*/
+  background-color: white;
+  color: #E5017D;
+  font: bold;
+  font-size: 20pX;
+}
+
+/* Estilo del menú desplegable */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #53C7FD;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-menu li {
+  margin: 5px 0;
+}
+
+/* Cambia el cursor al pasar el mouse sobre "Adoptar" para indicar que es interactivo */
+.dropdown:hover {
+  cursor: pointer;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+#contenedor {
+  display: flex;
+
+  flex: 4;
+}
+
+#as1 h1 {
+  color: #E5017D;
+  margin: 30px;
+}
+
+#as1 p,
+ol,
+li {
+  margin: 15px;
+}
+
+#as2 {
+  margin: 30px;
+  align-items: right
+}
+
+#as2 img {
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: white;
+  padding: 10px;
+}
+#anuncios{
+  display: inline-block;
+}
+#anuncios {
+  width: 25%;
+  display: block;
+}
+
+#anuncios h2 {
+  color: #80E804;
+}
+
+#anuncios a {
+  color: #54C7FD;
+}
+
+#anuncios a {
+  cursor: pointer;
+}
+
+#anuncios a:hover {
+  color: #1ca8e9;
+}
+#recuadro1 {
+  float: left;
+  margin: 5px 0;
+  margin-left: 20px;
+  padding: 20px 10px;
+  width: 90%;
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  background-color: #F5FEFF;
+  border:  2px solid #C9E5E9;
+  border-radius: 15px;
+}
+
+#recuadro1 h2 {
+  margin-bottom: 5px;
+}
+
+#recuadro1 ol {
+  width: 20%;
+  list-style: none;
+}
+
+#recuadro1 li {
+  margin: 10px 0;
+}
+
+#recuadro2 {
+  float: left;
+  margin: 5px 0;
+  margin-left: 20px;
+  padding: 20px 10px;
+  width: 90%;
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  background-color: #F5FEFF;
+  border: 2px solid #C9E5E9;
+  border-radius: 15px;
+}
+
+#recuadro2 h2 {
+  margin-bottom: 5px;
+}
+
+#recuadro3 {
+  float: left;
+  margin: 5px 0;
+  margin-left: 20px;
+  padding: 20px 10px;
+  width: 90%;
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  background-color: #F5FEFF;
+  border:  2px solid #C9E5E9;
+  border-radius: 15px;
+}
+
+#recuadro3 h2 {
+  margin-bottom: 5px;
+}
+
+footer{
+  background-color: #1ca8e9;
+  padding: 25px;
+  text-align: center;
+}
+#navegador{
+  display: flex;
+  justify-content: center;
+}
+#navegador a:hover{
+  color: #E5017D;
+}
