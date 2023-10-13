@@ -1,0 +1,137 @@
+header{
+    text-align: center;
+    background-color: #2962A7;
+    background-image: url('../img/wallpaper2.jpg');
+    height: 303px;
+    color: white;
+}
+
+.HeaderDesc{
+    color: #D7434F;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar{
+    background-color: #BBACAF;
+    color: white;
+    
+    text-decoration: none;
+    padding: 15px;
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+}
+nav a:hover{
+    color: #DAD4E0;
+
+}
+.article h2{
+    color: #385072;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.article h5{
+    color: #CB384B;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.article{
+    width: 70%;
+    border-left: 4px solid #BBACAF;
+    padding-left: 10px;
+    flex: 3;/*con esto hago que el flex sea mas grande */
+    margin-left: 10px;
+}
+.fakeimg{
+    background-color: #BBACAF;
+    justify-content: center;
+    width: 10%;
+}
+.side h2{
+    color: #385072;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.side h2{
+    color: #CB384B;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.side{
+    width: 70%;
+    flex: 1;/*con esto hago que el flex sea mas pequeño */
+    
+}
+.side h3{
+    color: #385072;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.side a{
+    text-decoration: none;
+    color: #385072;
+}
+
+.toursnews{
+    background-color: #BBACAF;
+    width: 90%;
+    height: 60px;
+    display: flex;
+    margin-right: 10px;
+}
+.toursnews img{
+    border-radius: 50px;
+}
+.toursnews a{
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    margin-left: 8px;
+}
+.toursnews a:hover{
+    background-color: #DAD4E0;
+    color: #BBACAF;
+}
+.footer h2{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.footer h2{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.footer{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: #9B847B;
+    background-image: url('../img/footer.jpg');
+    color: white;
+}
+.main{
+    display: flex;
+    
+}
+@media(max-width:768px) {
+    header{
+        width: 100%;
+    }
+    .main{
+        flex-direction: column;
+        flex: 1;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 0px;
+        width: auto;
+    }
+    .article{
+        flex: 1;
+    }
+    .toursnews{
+        margin-bottom: 5px;
+    }
+    .footer{
+        width: auto;
+    }
+}
+
