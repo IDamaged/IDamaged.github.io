@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Calculadoras</title>
+    </head>
+
+    <body>
+        <div id="container">
+            <h2>Calculadora de Conversión de Temperatura</h2>
+            <label for="celsius">Temperatura en Celsius:</label>
+            <input type="number" id="celsius" placeholder="Ingrese grados Celsius" required>
+            <button id="convertToFahrenheit" onclick="convertirFarenheit()">Convertir a Fahrenheit</button>
+            <button id="convertToKelvin" onclick="convertirKelvin()">Convertir a Kelvin</button>
+            <div id="result"></div>
+        </div>
+
+        <div id="container">
+            <h2>Calculadora de Conversión de Distancia</h2>
+            <label for="kilometros">Distancia en kilometros:</label>
+            <input type="number" id="kilometros" placeholder="Ingrese los Kilometros" required>
+            <button id="millas" onclick="convertirMillas()">Convertir a Millas</button>
+            <button id="metros" onclick="convertirmetros()">Convertir a Metros</button>
+            <div id="result1"></div>
+        </div>
+        
+        <div id="container">
+            <h2>Calculadora de IMC</h2>
+            <label for="peso">Peso en kilogramos:</label>
+            <input type="number" id="peso" placeholder="Ingrese su peso en kg" required>
+            <label for="altura">Altura en metros:</label>
+            <input type="number" id="altura" placeholder="Ingrese su altura en m" required>
+            <button id="calcularIMC" onclick="imc()">Calcular IMC</button>
+            <div id="result2"></div>
+        </div>
+        <script src="js/calculos.js"></script>
+    </body>
+</html>
