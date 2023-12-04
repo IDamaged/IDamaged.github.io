@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Crédito Happy Eart</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="css/home.css" rel="stylesheet" type="text/css" />
+    <link href="css/forms.css" rel="stylesheet" type="text/css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="scr/credito.js"></script>
+    <script src="scr/prima.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <header id="header">
+            <nav class="menu">
+                <ul>
+                    <li class="btn_1"><a href="home.html">Home</a></li>
+                    <li class="btn_2"><a href="weather.html">Tiempo</a></li>
+                    <li class="btn_3"><a href="credito.html">Crédito</a></li>
+                    <li class="btn_4"><a href="#">Servicios</a></li>
+                    <li class="btn_5"><a href="contacto.html">Contáctenos</a></li>
+                </ul>
+            </nav>
+            <img src="images/logo.jpg" alt="" name="logo" width="251" height="45" id="logo" />
+        </header>
+
+        <div id="main">
+            <form class="contact_form" action="#" id="contact_form" method="post">
+                <div>
+                    <ul>
+                        <li>
+                            <h2>Crédito Happy Eart</h2>
+                            <span class="required_notification">* Datos requeridos</span>
+                        </li>
+                        <li>
+                            <label for="name">Nombre:</label>
+                            <input type="text" name="nombre" placeholder="John Doe" required=required />
+                        </li>
+                        <li>
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" placeholder="info@developerji.com" required=required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$"/>
+                            <span class="form_hint">Formato correcto: "name@something.com"</span>
+                        </li>
+                        <li>
+                            <Label for="fechaSoli">Fecha Solicitud:</Label>
+                            <input type="date" name="fechaSoli" placeholder="17/8/1985" required=required>
+                            <span class="form_hint">Formato Correcto: "dd/mm/yyyy"</span>
+                        </li>
+                        <li>
+                            <label for="txtConstruccion">Metros Construccion:</label>
+                            <input type="text" name="txtConstruccion" placeholder="400" required=required>
+                            <span class="form_hint">Formato Correcto: "#####.#"</span>
+                        </li>
+                        <li>
+                            <label for="txtTerreno">Metros Terreno:</label>
+                            <input type="text" name="txtTerreno" placeholder="400" required=required>
+                            <span class="form_hint">Formato Correcto: "#####.#"</span>
+                        </li>
+                        <li>
+                            <label for="chkAcabado">Acabado de Lujo:</label>
+                            <input type="checkbox" name="chkAcabado" required=required>
+                            <span class="form_hint">Formato Correcto: "#####.#"</span>
+                        </li>
+                        <li>
+                            <label for="rbdUbicacion">Ubicación:</label>
+                            <input type="radio" name="rbdUbicacion" required=required>Rural<br>
+                            <input type="radio" name="rbdUbicacion" required=required>Urbana
+                        </li>
+                        <li>
+                            <label for="numBanios">Cantidad de baños completos</label>
+                            <input type="number" name="numBanios" min="1" max="10" required=required>
+                        </li>
+                        <li>
+                            <label for="chkCochera">Cochera:</label>
+                            <input type="checkbox" name="chkCochera" required=required>
+                            <span class="form_hint">Formato Correcto: "###.##"</span>
+                        </li>
+                        <li>
+                            <label for="numCarros">Cantidad de carros:</label>
+                            <input type="number" name="numCarros" min="1" max="3" required=required>
+                        </li>
+                        <li>
+                            <label for="chkBalcon">Extras:</label>
+                            <input type="checkbox" name="chkBalcon" required=required>Balcón
+                            <input type="checkbox" name="chkPiscina" required=required>Piscina<br>
+                            <input type="checkbox" name="chkParilla" required=required>Parilla
+                            <input type="checkbox" name="chkTerraza" required=required>Terraza
+                        </li>
+                        <li>
+                            <label for="txtPrima">Prima:</label>
+                            <input type="text" name="txtPrima" required>
+                            <span class="form_hint">Formato Correcto: "#####.#"</span>
+                        </li>
+                        <li>
+                            <label for="txtFinancion">Estado de Financiacion:</label>
+                            <input type="text" name="txtFinancion" readonly><br>
+                        </li>
+                        <li>
+                            <button class="submit" type="button" onclick="Cotizar()">Cotizar</button>
+                        </li>
+                        <li>
+                            <button class="submit" type="button" onclick="proyeccion()">Mostrar Proyección</button>
+                        </li>
+                        <li>
+                            <p id="lblCotizacion"></p>
+                        </li>
+                        <li>
+                            <table border="1" id="tabla">
+                                
+                            </table>
+                        </li>
+                    </ul>
+                </div>
+            </form>
+        </div>
+
+        <footer id="footer">
+            <p>
+                <a href="home.html">Home</a> | <a href="weather.html">Tiempo</a> | <a href="credito.html">Crédito</a> |
+                <a href="#">Servicios</a> | <a href="contacto.html">Contáctenos</a><br />
+                Copyright &copy; Real State Happy Eart
+            </p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
