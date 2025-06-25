@@ -1,0 +1,33 @@
+.card-img-top {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 16 / 9; /* Mantiene relación tipo widescreen */
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  font-size: 28px;
+  padding: 15px;
+  border-radius: 50%;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease-in-out;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .card-img-top {
+    aspect-ratio: 4 / 3; 
+  }
+}

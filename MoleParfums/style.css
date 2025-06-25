@@ -1,0 +1,50 @@
+.carousel {
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .carousel img {
+      object-fit: cover;
+      height: 400px;
+    }
+
+    .carousel-caption {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 1rem;
+      border-radius: 10px;
+    }
+    .whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  font-size: 28px;
+  padding: 15px;
+  border-radius: 50%;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease-in-out;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  color: white;
+  text-decoration: none;
+}
+
+
+    @media (max-width: 768px) {
+      .carousel img {
+        height: 250px;
+      }
+
+      .carousel-caption h5 {
+        font-size: 1.2rem;
+      }
+
+      .carousel-caption p {
+        font-size: 0.9rem;
+      }
+    }
